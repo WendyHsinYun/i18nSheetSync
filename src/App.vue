@@ -6,9 +6,6 @@
   </div>
 </template>
 
-<script setup>
-</script>
-
 <style>
 /* 若你不想在 template 裡直接寫 Tailwind class，也可以用 CSS 定義 */
 #app {

@@ -123,8 +123,9 @@ function handleClear() {
   languages.forEach(lang => {
     lang.file = null;
   });
-  const fileInputs = document.querySelectorAll('input[type="file"]');
-  fileInputs.forEach((input: HTMLInputElement) => {
+  const fileInputs = document.querySelectorAll('input[type="file"]') as NodeListOf<HTMLInputElement>;
+
+    fileInputs.forEach((input) => {
     input.value = '';
   });
 }
